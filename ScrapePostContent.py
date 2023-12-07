@@ -13,7 +13,7 @@ import time
 import pandas as pd
 
 def get_links(page):
-    # each page contains 120 posts' links
+    # each page contains 120 posts' links 
     for i in range(25, min(145,len(page))):
         link = page[i].get_attribute("href")
         if link == "":

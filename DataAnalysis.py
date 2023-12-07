@@ -14,7 +14,7 @@ from sklearn.metrics import roc_auc_score, roc_curve
 import matplotlib.pyplot as plt
 from sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay
 
-# Function to display confusion matrix
+# Function to display confusion matrix 
 def display_confusion_matrix(y_true, y_pred, model_name):
     cm = confusion_matrix(y_true, y_pred)
     disp = ConfusionMatrixDisplay(confusion_matrix=cm, display_labels=[0, 1])
